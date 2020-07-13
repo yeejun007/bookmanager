@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		BB0D292024BB2E6500DD4F96 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0D291F24BB2E6500DD4F96 /* main.m */; };
+		BB0D292824BB318500DD4F96 /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0D292724BB318500DD4F96 /* Book.m */; };
+		BB0D292B24BC2C3400DD4F96 /* BookManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0D292A24BC2C3400DD4F96 /* BookManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		BB0D291C24BB2E6500DD4F96 /* BookManager */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BookManager; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB0D291F24BB2E6500DD4F96 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BB0D292624BB318500DD4F96 /* Book.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
+		BB0D292724BB318500DD4F96 /* Book.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
+		BB0D292924BC2C3400DD4F96 /* BookManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BookManager.h; sourceTree = "<group>"; };
+		BB0D292A24BC2C3400DD4F96 /* BookManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				BB0D291F24BB2E6500DD4F96 /* main.m */,
+				BB0D292924BC2C3400DD4F96 /* BookManager.h */,
+				BB0D292A24BC2C3400DD4F96 /* BookManager.m */,
+				BB0D292624BB318500DD4F96 /* Book.h */,
+				BB0D292724BB318500DD4F96 /* Book.m */,
 			);
 			path = BookManager;
 			sourceTree = "<group>";
@@ -119,6 +129,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB0D292B24BC2C3400DD4F96 /* BookManager.m in Sources */,
+				BB0D292824BB318500DD4F96 /* Book.m in Sources */,
 				BB0D292024BB2E6500DD4F96 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
