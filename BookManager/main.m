@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "Book.h"
+#import "BookManager.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -27,7 +28,14 @@ int main(int argc, const char * argv[]) {
         book3.author = @"톨스토이";
         
 //        book1.bookPrint;
-        [book3 bookPrint];
+//        [book3 bookPrint];
+        
+        BookManager *myBook = [[BookManager alloc]init];
+        [myBook addBook:book1];
+        [myBook addBook:book2];
+        [myBook addBook:book3];
+        
+        NSLog(@"%@", [myBook showAllBook]);
         
     }
     return 0;
