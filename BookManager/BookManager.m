@@ -22,12 +22,12 @@
     }
     return self;
 }
- 
--(void)addBook:(Book *)bookObject{
+
+-(void)addBook:(Book *)bookObject {
     [bookList addObject: bookObject];
 }
 
--(NSString *) showAllBook{
+-(NSString *) showAllBook {
     NSMutableString *strTemp = [[NSMutableString alloc]init];
     // bookList의 각 요소들은 Book클래스로부터 만들어진것임. 따라서 타입은 그 클래스명인 Book을 쓴다
     for(Book *bookTemp in bookList){
@@ -44,6 +44,29 @@
         [strTemp appendString:@"\n"];
     }
     return strTemp;
+}
+
+-(NSUInteger)countBook {
+    return [bookList count];
+}
+
+-(NSString *)findBook:(NSString *)name {
+    NSMutableString *strTemp = [[NSMutableString alloc]init];
+    
+    for(Book *bookTemp in bookList){
+        if([bookTemp.name isEqualToString:name]){
+            [strTemp appendString:@"Name : "];
+            [strTemp appendString: bookTemp.name];
+            [strTemp appendString:@"\n"];
+            [strTemp appendString:@"Genre : "];
+            [strTemp appendString: bookTemp.genre];
+            [strTemp appendString:@"\n"];
+            [strTemp appendString:@"Author : "];
+            [strTemp appendString: bookTemp.author];
+            return strTemp;
+        }
+    }
+    return nil;
 }
 
 @end
