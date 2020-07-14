@@ -4,6 +4,7 @@
 
 ## `Technical Skills`
 - objective-c, xcode
+<br/>
 
 ## `Details`
 (UI 없이 class 기능만 구현해봄)
