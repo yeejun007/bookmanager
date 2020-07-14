@@ -45,6 +45,16 @@ int main(int argc, const char * argv[]) {
             NSLog(@"찾으시는 책이 없네요..");
         }
         
+        NSString *removeResult = [myBook removeBook:@"죄와 벌"];
+        if (removeResult != nil) {
+            NSLog(@"%@ 책을 지웠습니다", removeResult);
+        }else {
+            NSLog(@"지우려는 책이 없네요..");
+        }
+        
+        NSLog(@"%@", [myBook showAllBook]);
+        NSLog(@"count : %li", [myBook countBook]);
+        
     }
     return 0;
 }

@@ -25,6 +25,7 @@ NS_ASSUME_NONNULL_BEGIN
 // implementation에서 사용할 count 메소드가 NSUInteger 타입을 리턴하기 때문
 -(NSUInteger) countBook;
 -(NSString *) findBook:(NSString *)name;
+-(NSString *) removeBook:(NSString *)name;
 
 @end
 

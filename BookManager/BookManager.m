@@ -31,6 +31,7 @@
     NSMutableString *strTemp = [[NSMutableString alloc]init];
     // bookList의 각 요소들은 Book클래스로부터 만들어진것임. 따라서 타입은 그 클래스명인 Book을 쓴다
     for(Book *bookTemp in bookList){
+        [strTemp appendString:@"\n"];
         [strTemp appendString:@"Name : "];
         [strTemp appendString: bookTemp.name];
         [strTemp appendString:@"\n"];
@@ -64,6 +65,16 @@
             [strTemp appendString:@"Author : "];
             [strTemp appendString: bookTemp.author];
             return strTemp;
+        }
+    }
+    return nil;
+}
+
+-(NSString *) removeBook:(NSString *)name {
+    for(Book *bookTemp in bookList) {
+        if([bookTemp.name isEqualToString:name]) {
+            [bookList removeObject: bookTemp];
+            return name;
         }
     }
     return nil;
